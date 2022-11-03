@@ -36,12 +36,11 @@ describe('Object to query string', () => {
 
 describe('Query string to object', () => {
   it('should convert a query string to object', () => {
-    const qs = 'name=Maria&profession=developer';
-    parse(qs);
+    const qs = 'name=Maria';
 
-    // expect(parse(qs)).toEqual({
-    //   name: 'Maria',
-    //   profession: 'developer',
-    // });
+    expect(parse(qs)).toEqual({
+      name: 'Maria',
+
+    });
   });
 });
